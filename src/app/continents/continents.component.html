@@ -1,0 +1,23 @@
+<div class="container">
+    <br>
+        <form class="d-flex">
+            
+            <input type="text"
+            matInput 
+              
+            class="form-control me-2"
+            
+            placeholder="Search Continents" aria-label="Search">
+        
+        </form>
+        
+    <hr> 
+    <div class="card" style="width: 18rem;" *ngFor="let c of searchResult"
+    (click)="selectCountrie(c)">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ c.name.official }}</h5>
+          <a href="#" class="btn btn-primary">Plus de details</a>
+        </div>
+      </div>    
+</div>
